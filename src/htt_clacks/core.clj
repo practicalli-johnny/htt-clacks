@@ -1,5 +1,6 @@
 (ns htt-clacks.core
-  (:require [htt-clacks.clacks-alphabet :refer [alphabet]]))
+  (:require [htt-clacks.clacks-alphabet :refer [alphabet]]
+            [clojure.set]))
 
 (def alphabet-inverted (clojure.set/map-invert alphabet))
 
